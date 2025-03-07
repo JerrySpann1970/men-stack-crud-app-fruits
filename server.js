@@ -40,7 +40,7 @@ app.post("/fruits", async (req, res) => {
         req.body.isReadyToEat = false;
     }
     await Fruit.create(req.body);
-    res.redirect("/fruits/new");
+    res.redirect("/fruits");
 });
 
 // index route sends a page that list all fruits
